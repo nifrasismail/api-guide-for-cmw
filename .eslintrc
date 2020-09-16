@@ -1,0 +1,24 @@
+{
+  "root": true,
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "extends": ["airbnb-typescript/base"],
+  "rules": {
+    "no-console": "off",
+    "comma-dangle": [
+      "error",
+      {
+        "objects": "always-multiline",
+        "functions": "never",
+        "arrays": "only-multiline"
+      }
+    ],
+    "implicit-arrow-linebreak": "off",
+    "@typescript-eslint/no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars-experimental": "error",
+    "function-paren-newline": "off",
+    // remove this if prettier adds an option to set operators "before"
+    "operator-linebreak": ["error", "after"]
+  }
+}
